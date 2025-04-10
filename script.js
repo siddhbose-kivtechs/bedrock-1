@@ -5,9 +5,14 @@ const ContentChat = document.getElementsByClassName("ContentChat")[0];
 const send1 = document.getElementById("send1");
 const send2 = document.getElementById("send2");
 const modelSelect = document.getElementById("modelSelect"); // New line
+// local route 
+// const BASE_URL = 'http://localhost:8080';
+// const PRIMARY_URL = `${BASE_URL}/api/chat/bedrock`;
 
-const BASE_URL = 'http://localhost:8080';
-const PRIMARY_URL = `${BASE_URL}/api/chat/bedrock`;
+// live server route 
+const BASE_URL ='https://python-test-snowy.vercel.app'
+const PRIMARY_URL = `${BASE_URL}/api/bedrock`;
+
 
 // Event Listeners
 send_icon.addEventListener("click", SendMsgUser);
